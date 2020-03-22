@@ -22,7 +22,7 @@ import javax.persistence.Table;
             query = "SELECT r FROM Report AS r ORDER BY r.id DESC"
             ),
     @NamedQuery(
-            name = "getReports",
+            name = "getReportsCount",
             query = "SELECT COUNT(r) FROM Report AS r"
             ),
 })
@@ -109,4 +109,3 @@ public class Report {
         this.updated_at = updated_at;
     }
 }
-
